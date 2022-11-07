@@ -1,4 +1,4 @@
-package menu;
+package mysql;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -21,7 +21,7 @@ import java.awt.event.MouseEvent;
 import java.awt.Cursor;
 import java.awt.SystemColor;
 import javax.swing.border.SoftBevelBorder;
-
+import menu.*;
 import 	mvc_jugadores.controlador;
 import mvc_jugadores.consulta;
 import mvc_jugadores.jugador_modelo;

@@ -41,481 +41,319 @@ public class Torneo extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/champions (1).png")));
-		lblNewLabel.setBounds(10, 10, 918, 202);
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		contentPane.add(lblNewLabel);
+		JPanel p1 = new JPanel();
+		p1.setBounds(10, 25, 100, 30);
+		contentPane.add(p1);
+		p1.setLayout(null);
 		
-		JPanel jugadorp = new JPanel();
-		jugadorp.setBounds(10, 231, 81, 45);
-		contentPane.add(jugadorp);
-		jugadorp.setLayout(null);
+		JPanel estado = new JPanel();
+		estado.setBackground(new Color(255, 0, 0));
+		estado.setBounds(90, 0, 10, 30);
+		p1.add(estado);
 		
-		JLabel jugador = new JLabel("jugador");
-		jugador.setBounds(0, 0, 81, 45);
-		jugadorp.add(jugador);
+		JPanel p2 = new JPanel();
+		p2.setLayout(null);
+		p2.setBounds(10, 60, 100, 30);
+		contentPane.add(p2);
 		
-		JPanel barcelonap = new JPanel();
-		barcelonap.setBounds(10, 286, 81, 45);
-		barcelonap.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
-		barcelonap.setBackground(new Color(0, 0, 153));
-		contentPane.add(barcelonap);
-		barcelonap.setLayout(null);
+		JPanel estado_1 = new JPanel();
+		estado_1.setBackground(Color.RED);
+		estado_1.setBounds(90, 0, 10, 30);
+		p2.add(estado_1);
 		
-		JLabel barcelona = new JLabel("");
-		barcelona.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/barcelona.png")));
-		barcelona.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		barcelona.setHorizontalAlignment(SwingConstants.CENTER);
-		barcelona.setBounds(0, 0, 81, 45);
-		barcelonap.add(barcelona);
+		JPanel p3 = new JPanel();
+		p3.setLayout(null);
+		p3.setBounds(10, 125, 100, 30);
+		contentPane.add(p3);
 		
-		JPanel real = new JPanel();
-		real.setBounds(10, 362, 81, 45);
-		contentPane.add(real);
-		real.setLayout(null);
+		JPanel estado_2 = new JPanel();
+		estado_2.setBackground(Color.RED);
+		estado_2.setBounds(90, 0, 10, 30);
+		p3.add(estado_2);
 		
-		JLabel real_madrid = new JLabel("");
-		real_madrid.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/real_madrid.png")));
-		real_madrid.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		real_madrid.setHorizontalAlignment(SwingConstants.CENTER);
-		real_madrid.setBounds(0, 0, 81, 45);
-		real.add(real_madrid);
+		JPanel p4 = new JPanel();
+		p4.setLayout(null);
+		p4.setBounds(10, 160, 100, 30);
+		contentPane.add(p4);
 		
-		JPanel liverpoolp = new JPanel();
-		liverpoolp.setBounds(10, 417, 81, 45);
-		liverpoolp.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		liverpoolp.setBackground(new Color(0, 153, 153));
-		contentPane.add(liverpoolp);
-		liverpoolp.setLayout(null);
+		JPanel estado_3 = new JPanel();
+		estado_3.setBackground(Color.RED);
+		estado_3.setBounds(90, 0, 10, 30);
+		p4.add(estado_3);
 		
-		JLabel liverpool = new JLabel("");
-		liverpool.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/liverpool.png")));
-		liverpool.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		liverpool.setHorizontalAlignment(SwingConstants.CENTER);
-		liverpool.setBounds(0, 0, 81, 45);
-		liverpoolp.add(liverpool);
+		JPanel p5 = new JPanel();
+		p5.setLayout(null);
+		p5.setBounds(10, 225, 100, 30);
+		contentPane.add(p5);
 		
-		JPanel arsenalp = new JPanel();
-		arsenalp.setBounds(10, 503, 81, 45);
-		arsenalp.setBackground(new Color(255, 0, 0));
-		arsenalp.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		contentPane.add(arsenalp);
-		arsenalp.setLayout(null);
+		JPanel estado_2_1 = new JPanel();
+		estado_2_1.setBackground(Color.RED);
+		estado_2_1.setBounds(90, 0, 10, 30);
+		p5.add(estado_2_1);
 		
-		JLabel arsenal = new JLabel("");
-		arsenal.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/arsenal (1).png")));
-		arsenal.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		arsenal.setHorizontalAlignment(SwingConstants.CENTER);
-		arsenal.setBounds(0, 0, 81, 45);
-		arsenalp.add(arsenal);
+		JPanel p6 = new JPanel();
+		p6.setLayout(null);
+		p6.setBounds(10, 260, 100, 30);
+		contentPane.add(p6);
 		
-		JPanel dortmundp = new JPanel();
-		dortmundp.setBounds(10, 558, 81, 45);
-		dortmundp.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		dortmundp.setBackground(new Color(255, 255, 0));
-		contentPane.add(dortmundp);
-		dortmundp.setLayout(null);
+		JPanel estado_3_1 = new JPanel();
+		estado_3_1.setBackground(Color.RED);
+		estado_3_1.setBounds(90, 0, 10, 30);
+		p6.add(estado_3_1);
 		
-		JLabel dortmund = new JLabel("");
-		dortmund.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/dortmund (1).png")));
-		dortmund.setHorizontalAlignment(SwingConstants.CENTER);
-		dortmund.setBounds(0, 0, 81, 45);
-		dortmundp.add(dortmund);
+		JPanel p7 = new JPanel();
+		p7.setLayout(null);
+		p7.setBounds(10, 325, 100, 30);
+		contentPane.add(p7);
 		
-		JPanel juventosp = new JPanel();
-		juventosp.setBackground(Color.WHITE);
-		juventosp.setBounds(10, 644, 81, 45);
-		contentPane.add(juventosp);
-		juventosp.setLayout(null);
+		JPanel estado_2_2 = new JPanel();
+		estado_2_2.setBackground(Color.RED);
+		estado_2_2.setBounds(90, 0, 10, 30);
+		p7.add(estado_2_2);
 		
-		JLabel juventos = new JLabel("");
-		juventos.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/WhatsApp Image 2022-10-09 at 4.44.13 PM.jpeg")));
-		juventos.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		juventos.setHorizontalAlignment(SwingConstants.CENTER);
-		juventos.setBounds(0, 0, 81, 45);
-		juventosp.add(juventos);
+		JPanel p8 = new JPanel();
+		p8.setLayout(null);
+		p8.setBounds(10, 360, 100, 30);
+		contentPane.add(p8);
 		
-		JPanel cityp = new JPanel();
-		cityp.setBounds(10, 699, 81, 45);
-		cityp.setBackground(new Color(0, 191, 255));
-		contentPane.add(cityp);
-		cityp.setLayout(null);
+		JPanel estado_3_2 = new JPanel();
+		estado_3_2.setBackground(Color.RED);
+		estado_3_2.setBounds(90, 0, 10, 30);
+		p8.add(estado_3_2);
 		
-		JLabel city = new JLabel("");
-		city.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/manchestercity.png")));
-		city.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		city.setHorizontalAlignment(SwingConstants.CENTER);
-		city.setBounds(0, 0, 81, 45);
-		cityp.add(city);
+		JPanel p9 = new JPanel();
+		p9.setLayout(null);
+		p9.setBounds(10, 425, 100, 30);
+		contentPane.add(p9);
 		
-		JPanel tottenp = new JPanel();
-		tottenp.setBounds(847, 231, 81, 45);
-		tottenp.setBackground(new Color(0, 0, 0));
-		contentPane.add(tottenp);
-		tottenp.setLayout(null);
+		JPanel estado_2_3 = new JPanel();
+		estado_2_3.setBackground(Color.RED);
+		estado_2_3.setBounds(90, 0, 10, 30);
+		p9.add(estado_2_3);
 		
-		JLabel totten = new JLabel("");
-		totten.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/totten2.png")));
-		totten.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		totten.setHorizontalAlignment(SwingConstants.CENTER);
-		totten.setBounds(0, 0, 81, 45);
-		tottenp.add(totten);
+		JPanel p10 = new JPanel();
+		p10.setLayout(null);
+		p10.setBounds(10, 460, 100, 30);
+		contentPane.add(p10);
 		
-		JPanel unitedp = new JPanel();
-		unitedp.setBounds(847, 286, 81, 45);
-		unitedp.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		unitedp.setBackground(new Color(255, 0, 0));
-		contentPane.add(unitedp);
-		unitedp.setLayout(null);
+		JPanel estado_3_3 = new JPanel();
+		estado_3_3.setBackground(Color.RED);
+		estado_3_3.setBounds(90, 0, 10, 30);
+		p10.add(estado_3_3);
 		
-		JLabel united = new JLabel("");
-		united.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/unated.png")));
-		united.setHorizontalAlignment(SwingConstants.CENTER);
-		united.setBounds(0, 0, 81, 45);
-		unitedp.add(united);
+		JPanel p11 = new JPanel();
+		p11.setLayout(null);
+		p11.setBounds(10, 525, 100, 30);
+		contentPane.add(p11);
 		
-		JPanel salkap = new JPanel();
-		salkap.setBounds(847, 362, 81, 45);
-		salkap.setBackground(new Color(0, 0, 139));
-		contentPane.add(salkap);
-		salkap.setLayout(null);
+		JPanel estado_2_4 = new JPanel();
+		estado_2_4.setBackground(Color.RED);
+		estado_2_4.setBounds(90, 0, 10, 30);
+		p11.add(estado_2_4);
 		
-		JLabel salka = new JLabel("");
-		salka.setBorder(new LineBorder(new Color(0, 0, 0)));
-		salka.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/salka.png")));
-		salka.setHorizontalAlignment(SwingConstants.CENTER);
-		salka.setBounds(0, 0, 81, 45);
-		salkap.add(salka);
+		JPanel p12 = new JPanel();
+		p12.setLayout(null);
+		p12.setBounds(10, 560, 100, 30);
+		contentPane.add(p12);
 		
-		JPanel portop = new JPanel();
-		portop.setBounds(847, 417, 81, 45);
-		portop.setBackground(new Color(65, 105, 225));
-		contentPane.add(portop);
-		portop.setLayout(null);
+		JPanel estado_3_4 = new JPanel();
+		estado_3_4.setBackground(Color.RED);
+		estado_3_4.setBounds(90, 0, 10, 30);
+		p12.add(estado_3_4);
 		
-		JLabel porto = new JLabel("");
-		porto.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/porto.png")));
-		porto.setHorizontalAlignment(SwingConstants.CENTER);
-		porto.setBounds(0, 0, 81, 45);
-		portop.add(porto);
+		JPanel p13 = new JPanel();
+		p13.setLayout(null);
+		p13.setBounds(10, 625, 100, 30);
+		contentPane.add(p13);
 		
-		JPanel romap = new JPanel();
-		romap.setBounds(847, 503, 81, 45);
-		romap.setBackground(new Color(255, 204, 0));
-		contentPane.add(romap);
-		romap.setLayout(null);
+		JPanel estado_2_5 = new JPanel();
+		estado_2_5.setBackground(Color.RED);
+		estado_2_5.setBounds(90, 0, 10, 30);
+		p13.add(estado_2_5);
 		
-		JLabel roma = new JLabel("");
-		roma.setBorder(new LineBorder(new Color(0, 0, 0)));
-		roma.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/roma.png")));
-		roma.setHorizontalAlignment(SwingConstants.CENTER);
-		roma.setBounds(0, 0, 81, 45);
-		romap.add(roma);
+		JPanel p14 = new JPanel();
+		p14.setLayout(null);
+		p14.setBounds(10, 660, 100, 30);
+		contentPane.add(p14);
 		
-		JPanel bayerp = new JPanel();
-		bayerp.setBounds(847, 558, 81, 45);
-		bayerp.setBackground(new Color(51, 102, 255));
-		contentPane.add(bayerp);
-		bayerp.setLayout(null);
+		JPanel estado_3_5 = new JPanel();
+		estado_3_5.setBackground(Color.RED);
+		estado_3_5.setBounds(90, 0, 10, 30);
+		p14.add(estado_3_5);
 		
-		JLabel bayer = new JLabel("");
-		bayer.setBorder(new LineBorder(new Color(0, 0, 0)));
-		bayer.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/bayer.png")));
-		bayer.setHorizontalAlignment(SwingConstants.CENTER);
-		bayer.setBounds(0, 0, 81, 45);
-		bayerp.add(bayer);
+		JPanel p15 = new JPanel();
+		p15.setLayout(null);
+		p15.setBounds(10, 725, 100, 30);
+		contentPane.add(p15);
 		
-		JPanel parisp = new JPanel();
-		parisp.setBounds(847, 644, 81, 45);
-		parisp.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		parisp.setBackground(new Color(255, 255, 255));
-		contentPane.add(parisp);
-		parisp.setLayout(null);
+		JPanel estado_2_6 = new JPanel();
+		estado_2_6.setBackground(Color.RED);
+		estado_2_6.setBounds(90, 0, 10, 30);
+		p15.add(estado_2_6);
 		
-		JLabel paris = new JLabel("");
-		paris.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/paris.png")));
-		paris.setHorizontalAlignment(SwingConstants.CENTER);
-		paris.setBounds(0, 0, 81, 45);
-		parisp.add(paris);
+		JPanel p16 = new JPanel();
+		p16.setLayout(null);
+		p16.setBounds(10, 760, 100, 30);
+		contentPane.add(p16);
 		
-		JPanel ajaxp = new JPanel();
-		ajaxp.setBounds(847, 699, 81, 45);
-		ajaxp.setBackground(new Color(255, 102, 102));
-		contentPane.add(ajaxp);
-		ajaxp.setLayout(null);
+		JPanel estado_3_6 = new JPanel();
+		estado_3_6.setBackground(Color.RED);
+		estado_3_6.setBounds(90, 0, 10, 30);
+		p16.add(estado_3_6);
 		
-		JLabel ajax = new JLabel("");
-		ajax.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/ajax.png")));
-		ajax.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
-		ajax.setHorizontalAlignment(SwingConstants.CENTER);
-		ajax.setBounds(0, 0, 81, 45);
-		ajaxp.add(ajax);
+		JPanel oct1 = new JPanel();
+		oct1.setLayout(null);
+		oct1.setBounds(147, 41, 100, 30);
+		contentPane.add(oct1);
 		
-		JPanel real4 = new JPanel();
-		real4.setBorder(new LineBorder(new Color(0, 0, 0)));
-		real4.setBackground(Color.WHITE);
-		real4.setBounds(101, 379, 81, 45);
-		contentPane.add(real4);
-		real4.setLayout(null);
+		JPanel estado_1_1 = new JPanel();
+		estado_1_1.setBackground(Color.RED);
+		estado_1_1.setBounds(90, 0, 10, 30);
+		oct1.add(estado_1_1);
 		
-		JPanel dormu4 = new JPanel();
-		dormu4.setBorder(new LineBorder(new Color(0, 0, 0)));
-		dormu4.setBackground(Color.WHITE);
-		dormu4.setBounds(101, 558, 81, 45);
-		contentPane.add(dormu4);
-		dormu4.setLayout(null);
+		JPanel oct2 = new JPanel();
+		oct2.setLayout(null);
+		oct2.setBounds(147, 140, 100, 30);
+		contentPane.add(oct2);
 		
-		JPanel juve4 = new JPanel();
-		juve4.setBorder(new LineBorder(new Color(0, 0, 0)));
-		juve4.setBackground(Color.WHITE);
-		juve4.setBounds(101, 611, 81, 45);
-		contentPane.add(juve4);
-		juve4.setLayout(null);
+		JPanel estado_1_1_1 = new JPanel();
+		estado_1_1_1.setBackground(Color.RED);
+		estado_1_1_1.setBounds(90, 0, 10, 30);
+		oct2.add(estado_1_1_1);
 		
-		JPanel jugador4 = new JPanel();
-		jugador4.setBackground(Color.WHITE);
-		jugador4.setBorder(new LineBorder(new Color(0, 0, 0)));
-		jugador4.setBounds(101, 324, 81, 45);
-		contentPane.add(jugador4);
-		jugador4.setLayout(null);
+		JPanel oct3 = new JPanel();
+		oct3.setLayout(null);
+		oct3.setBounds(147, 236, 100, 30);
+		contentPane.add(oct3);
 		
-		JPanel jugadorsemi = new JPanel();
-		jugadorsemi.setBorder(new LineBorder(new Color(0, 0, 0)));
-		jugadorsemi.setBackground(Color.WHITE);
-		jugadorsemi.setBounds(192, 417, 81, 45);
-		contentPane.add(jugadorsemi);
-		jugadorsemi.setLayout(null);
+		JPanel estado_1_1_2 = new JPanel();
+		estado_1_1_2.setBackground(Color.RED);
+		estado_1_1_2.setBounds(90, 0, 10, 30);
+		oct3.add(estado_1_1_2);
 		
-		JPanel juvesemis = new JPanel();
-		juvesemis.setBorder(new LineBorder(new Color(0, 0, 0)));
-		juvesemis.setBackground(Color.WHITE);
-		juvesemis.setBounds(192, 503, 81, 45);
-		contentPane.add(juvesemis);
-		juvesemis.setLayout(null);
+		JPanel oct4 = new JPanel();
+		oct4.setLayout(null);
+		oct4.setBounds(147, 342, 100, 30);
+		contentPane.add(oct4);
 		
-		JPanel panel_9_3 = new JPanel();
-		panel_9_3.setBorder(new LineBorder(new Color(0, 0, 0)));
-		panel_9_3.setBackground(Color.WHITE);
-		panel_9_3.setBounds(283, 460, 81, 45);
-		contentPane.add(panel_9_3);
-		panel_9_3.setLayout(null);
+		JPanel estado_1_1_3 = new JPanel();
+		estado_1_1_3.setBackground(Color.RED);
+		estado_1_1_3.setBounds(90, 0, 10, 30);
+		oct4.add(estado_1_1_3);
 		
-		JPanel united4 = new JPanel();
-		united4.setBorder(new LineBorder(new Color(0, 0, 0)));
-		united4.setBackground(Color.WHITE);
-		united4.setBounds(756, 324, 81, 45);
-		contentPane.add(united4);
-		united4.setLayout(null);
+		JPanel oct5 = new JPanel();
+		oct5.setLayout(null);
+		oct5.setBounds(147, 442, 100, 30);
+		contentPane.add(oct5);
 		
-		JPanel porto4 = new JPanel();
-		porto4.setBorder(new LineBorder(new Color(0, 0, 0)));
-		porto4.setBackground(Color.WHITE);
-		porto4.setBounds(756, 379, 81, 45);
-		contentPane.add(porto4);
-		porto4.setLayout(null);
+		JPanel estado_1_1_4 = new JPanel();
+		estado_1_1_4.setBackground(Color.RED);
+		estado_1_1_4.setBounds(90, 0, 10, 30);
+		oct5.add(estado_1_1_4);
 		
-		JPanel bayer4 = new JPanel();
-		bayer4.setBorder(new LineBorder(new Color(0, 0, 0)));
-		bayer4.setBackground(Color.WHITE);
-		bayer4.setBounds(756, 558, 81, 45);
-		contentPane.add(bayer4);
-		bayer4.setLayout(null);
+		JPanel oct6 = new JPanel();
+		oct6.setLayout(null);
+		oct6.setBounds(147, 543, 100, 30);
+		contentPane.add(oct6);
 		
-		JPanel paris4 = new JPanel();
-		paris4.setBorder(new LineBorder(new Color(0, 0, 0)));
-		paris4.setBackground(Color.WHITE);
-		paris4.setBounds(756, 611, 81, 45);
-		contentPane.add(paris4);
-		paris4.setLayout(null);
+		JPanel estado_1_1_5 = new JPanel();
+		estado_1_1_5.setBackground(Color.RED);
+		estado_1_1_5.setBounds(90, 0, 10, 30);
+		oct6.add(estado_1_1_5);
 		
-		JPanel unitedsemi = new JPanel();
-		unitedsemi.setBorder(new LineBorder(new Color(0, 0, 0)));
-		unitedsemi.setBackground(Color.WHITE);
-		unitedsemi.setBounds(665, 417, 81, 45);
-		contentPane.add(unitedsemi);
-		unitedsemi.setLayout(null);
+		JPanel oct7 = new JPanel();
+		oct7.setLayout(null);
+		oct7.setBounds(147, 644, 100, 30);
+		contentPane.add(oct7);
 		
-		JPanel parissemis = new JPanel();
-		parissemis.setBorder(new LineBorder(new Color(0, 0, 0)));
-		parissemis.setBackground(Color.WHITE);
-		parissemis.setBounds(665, 503, 81, 45);
-		contentPane.add(parissemis);
-		parissemis.setLayout(null);
+		JPanel estado_1_1_6 = new JPanel();
+		estado_1_1_6.setBackground(Color.RED);
+		estado_1_1_6.setBounds(90, 0, 10, 30);
+		oct7.add(estado_1_1_6);
 		
-		JPanel panel_9_1_3 = new JPanel();
-		panel_9_1_3.setBorder(new LineBorder(new Color(0, 0, 0)));
-		panel_9_1_3.setBackground(Color.WHITE);
-		panel_9_1_3.setBounds(574, 460, 81, 45);
-		contentPane.add(panel_9_1_3);
-		panel_9_1_3.setLayout(null);
+		JPanel oct8 = new JPanel();
+		oct8.setLayout(null);
+		oct8.setBounds(147, 742, 100, 30);
+		contentPane.add(oct8);
 		
-		JLabel trofeo = new JLabel("");
-		trofeo.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/23f1e2d191fc3913058f730feecb149b (2).png")));
-		trofeo.setBounds(374, 324, 193, 365);
-		contentPane.add(trofeo);
+		JPanel estado_1_1_7 = new JPanel();
+		estado_1_1_7.setBackground(Color.RED);
+		estado_1_1_7.setBounds(90, 0, 10, 30);
+		oct8.add(estado_1_1_7);
 		
-		JPanel Octavosp = new JPanel();
-		Octavosp.addMouseListener(new MouseAdapter() {
+		JPanel cuart1 = new JPanel();
+		cuart1.setLayout(null);
+		cuart1.setBounds(319, 88, 100, 30);
+		contentPane.add(cuart1);
 		
-					});
-		Octavosp.setBackground(Color.BLACK);
-		Octavosp.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		Octavosp.setBounds(10, 753, 151, 37);
-		contentPane.add(Octavosp);
-		Octavosp.setLayout(null);
+		JPanel estado_1_1_8 = new JPanel();
+		estado_1_1_8.setBackground(Color.RED);
+		estado_1_1_8.setBounds(90, 0, 10, 30);
+		cuart1.add(estado_1_1_8);
 		
-		JLabel Octavos = new JLabel("  Octavos");
-		Octavos.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseEntered(MouseEvent e) {
-				Octavos.setForeground(Color.BLACK);
-				Octavosp.setBackground(Color.WHITE);
-			}
-			@Override
-			public void mouseExited(MouseEvent e) {
-				Octavos.setForeground(Color.WHITE);
-				Octavosp.setBackground(Color.BLACK);
-			}
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				jugadorp.setLocation(101, 324);
-				juventosp.setLocation(101, 611);
-				dortmundp.setLocation(101, 558);
-				real.setLocation(101, 379);
-				unitedp.setLocation(756, 324);
-				portop.setLocation(756, 379);
-				bayerp.setLocation(756, 558);
-				parisp.setLocation(756, 611);
-			}
-		});
-		Octavos.setBackground(Color.LIGHT_GRAY);
-		Octavos.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		Octavos.setForeground(new Color(255, 255, 255));
-		Octavos.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 15));
-		Octavos.setHorizontalAlignment(SwingConstants.CENTER);
-		Octavos.setBounds(0, 0, 151, 35);
-		Octavosp.add(Octavos);
+		JPanel cuart2 = new JPanel();
+		cuart2.setLayout(null);
+		cuart2.setBounds(319, 289, 100, 30);
+		contentPane.add(cuart2);
 		
-		JLabel octavos = new JLabel("");
-		octavos.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/Asunto (1).png")));
-		octavos.setForeground(new Color(0, 0, 0));
-		octavos.setBounds(101, 0, 50, 35);
-		Octavosp.add(octavos);
-		octavos.setHorizontalAlignment(SwingConstants.RIGHT);
-		octavos.setFont(new Font("Bernard MT Condensed", Font.BOLD, 15));
+		JPanel estado_1_1_8_1 = new JPanel();
+		estado_1_1_8_1.setBackground(Color.RED);
+		estado_1_1_8_1.setBounds(90, 0, 10, 30);
+		cuart2.add(estado_1_1_8_1);
 		
-
+		JPanel cuart3 = new JPanel();
+		cuart3.setLayout(null);
+		cuart3.setBounds(319, 494, 100, 30);
+		contentPane.add(cuart3);
 		
-		JPanel cuartosp = new JPanel();
-		cuartosp.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				jugadorp.setLocation(192, 417);
-				juventosp.setLocation(192, 503);
-				unitedp.setLocation(665, 417);
-				parisp.setLocation(665, 503);
-			}
-		});
-		cuartosp.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		cuartosp.setBackground(Color.BLACK);
-		cuartosp.setBounds(99, 678, 151, 37);
-		contentPane.add(cuartosp);
-		cuartosp.setLayout(null);
+		JPanel estado_1_1_8_3 = new JPanel();
+		estado_1_1_8_3.setBackground(Color.RED);
+		estado_1_1_8_3.setBounds(90, 0, 10, 30);
+		cuart3.add(estado_1_1_8_3);
 		
-		JLabel cuartos = new JLabel("Cuartos");
-		cuartos.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseEntered(MouseEvent e) {
-				cuartos.setForeground(Color.black);
-				cuartosp.setBackground(Color.WHITE);
-				
-			}
-			@Override
-			public void mouseExited(MouseEvent e) {
-				cuartos.setForeground(Color.WHITE);
-				cuartosp.setBackground(Color.BLACK);
-			}
-		});
-		cuartos.setForeground(new Color(255, 255, 255));
-		cuartos.setHorizontalAlignment(SwingConstants.CENTER);
-		cuartos.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 15));
-		cuartos.setBounds(0, 0, 151, 37);
-		cuartosp.add(cuartos);
+		JLabel lblTrofeo = new JLabel("");
+		lblTrofeo.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/23f1e2d191fc3913058f730feecb149b (2).png")));
+		lblTrofeo.setBounds(678, 41, 200, 303);
+		contentPane.add(lblTrofeo);
 		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/Asunto (1).png")));
-		lblNewLabel_3.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblNewLabel_3.setBounds(96, 0, 55, 37);
-		cuartosp.add(lblNewLabel_3);
+		JPanel cuart4 = new JPanel();
+		cuart4.setLayout(null);
+		cuart4.setBounds(319, 697, 100, 30);
+		contentPane.add(cuart4);
 		
-		JPanel semisp = new JPanel();
-		semisp.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		semisp.setBackground(Color.BLACK);
-		semisp.setBounds(192, 593, 151, 37);
-		contentPane.add(semisp);
-		semisp.setLayout(null);
+		JPanel estado_1_1_8_3_1 = new JPanel();
+		estado_1_1_8_3_1.setBackground(Color.RED);
+		estado_1_1_8_3_1.setBounds(90, 0, 10, 30);
+		cuart4.add(estado_1_1_8_3_1);
 		
-		JLabel semis = new JLabel("  Semifinal");
-		semis.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseEntered(MouseEvent e) {
-				semisp.setBackground(Color.WHITE);
-				semis.setForeground(Color.BLACK);
-				
-			}
-			@Override
-			public void mouseExited(MouseEvent e) {
-				semisp.setBackground(Color.BLACK);
-				semis.setForeground(Color.WHITE);
-			}
-		});
-		semis.setForeground(new Color(255, 255, 255));
-		semis.setHorizontalAlignment(SwingConstants.CENTER);
-		semis.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 13));
-		semis.setBounds(0, 0, 151, 37);
-		semisp.add(semis);
+		JPanel semi1 = new JPanel();
+		semi1.setLayout(null);
+		semi1.setBounds(504, 183, 100, 30);
+		contentPane.add(semi1);
 		
-		JLabel lblNewLabel_5 = new JLabel("");
-		lblNewLabel_5.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/Asunto (1).png")));
-		lblNewLabel_5.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblNewLabel_5.setBounds(96, 0, 55, 37);
-		semisp.add(lblNewLabel_5);
+		JPanel estado_1_1_8_2 = new JPanel();
+		estado_1_1_8_2.setBackground(Color.RED);
+		estado_1_1_8_2.setBounds(90, 0, 10, 30);
+		semi1.add(estado_1_1_8_2);
 		
-		JPanel final1p = new JPanel();
-		final1p.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		final1p.setBackground(Color.BLACK);
-		final1p.setBounds(374, 697, 193, 37);
-		contentPane.add(final1p);
-		final1p.setLayout(null);
+		JPanel semi2 = new JPanel();
+		semi2.setLayout(null);
+		semi2.setBounds(504, 596, 100, 30);
+		contentPane.add(semi2);
 		
-		JLabel final1 = new JLabel("Final");
-		final1.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseEntered(MouseEvent e) {
-				final1.setForeground(Color.BLACK);
-				final1p.setBackground(Color.WHITE);
-			}
-			@Override
-			public void mouseExited(MouseEvent e) {
-				final1.setForeground(Color.WHITE);
-				final1p.setBackground(Color.BLACK);
-			}
-		});
-		final1.setForeground(new Color(255, 255, 255));
-		final1.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 20));
-		final1.setHorizontalAlignment(SwingConstants.CENTER);
-		final1.setBounds(0, 0, 193, 37);
-		final1p.add(final1);
+		JPanel estado_1_1_8_4 = new JPanel();
+		estado_1_1_8_4.setBackground(Color.RED);
+		estado_1_1_8_4.setBounds(90, 0, 10, 30);
+		semi2.add(estado_1_1_8_4);
 		
-		JLabel lblNewLabel_7 = new JLabel("");
-		lblNewLabel_7.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/Asunto (1).png")));
-		lblNewLabel_7.setBounds(143, 0, 50, 37);
-		final1p.add(lblNewLabel_7);
+		JPanel finalista = new JPanel();
+		finalista.setLayout(null);
+		finalista.setBounds(725, 342, 100, 30);
+		contentPane.add(finalista);
 		
-		JLabel lblNewLabel_8 = new JLabel("");
-		lblNewLabel_8.setIcon(new ImageIcon(Torneo.class.getResource("/imagenes/champions22.png")));
-		lblNewLabel_8.setBounds(319, 0, 619, 800);
-		contentPane.add(lblNewLabel_8);
+		JPanel estado_1_1_8_5 = new JPanel();
+		estado_1_1_8_5.setBackground(Color.RED);
+		estado_1_1_8_5.setBounds(90, 0, 10, 30);
+		finalista.add(estado_1_1_8_5);
 	}
 }
